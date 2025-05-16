@@ -13,7 +13,7 @@ import { loadProducts } from '../../store/product/product.action';
 export class ProductComponent {
   products!: Observable<Product[]>;
   constructor(private store: Store) {
-    this.products = this.store.select(selectAllProducts);
+    this.products =    this.store.select(selectAllProducts);
   }
 
   ngOnInit() {
